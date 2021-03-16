@@ -30,5 +30,10 @@ namespace ExchangeRatesApp
             DateTime RightDate = DateTime.Parse(date);
             return RightDate;
         }
+
+        private async void Settings_Open(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Pages.SettingsPage());
+        }
     }
 }
