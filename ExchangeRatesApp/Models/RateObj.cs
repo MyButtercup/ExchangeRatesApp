@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ExchangeRatesApp.Models
 {
-    public class Rootobject
+    public class Rateobject
     {
         public Rate[] rates { get; set; }
     }

@@ -22,5 +22,15 @@ namespace ExchangeRatesApp.Pages
         {
             await Navigation.PushAsync(new MainPage());
         }
+
+        private void Sw_fir(object sender, ToggledEventArgs e)
+        {
+
+        }
+
+        private void Sw_sec(object sender, ToggledEventArgs e)
+        {
+
+        }
     }
 }
