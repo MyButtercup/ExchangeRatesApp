@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Настройки валют"
-             BackgroundColor="Beige"
              x:Class="ExchangeRatesApp.Pages.SettingsPage">
     
     <ContentPage.ToolbarItems>
@@ -11,344 +10,315 @@
     
     <ScrollView>
         <Grid HorizontalOptions="FillAndExpand" RowSpacing="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
             <StackLayout Grid.Row="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_fir"/>
+                <Switch x:Name="sw1" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_fir"/>
                 <ImageButton Source="menu.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv1" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv1" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale1" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName1" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw2" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv2" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv2" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale2" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName2" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw3" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_thr"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv3" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv3" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale3" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName3" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw4" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_four"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv4" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv4" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale4" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName4" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw5" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_five"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="5" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv5" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv5" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale5" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName5" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw6" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_six"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="6" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv6" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv6" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale6" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName6" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw7" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sev"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="7" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv7" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv7" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale7" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName7" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw8" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_eight"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="8" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv8" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv8" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale8" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName8" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw9" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_nine"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="9" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv9" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv9" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale9" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName9" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_fir"/>
+                <Switch x:Name="sw10" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_ten"/>
                 <ImageButton Source="menu.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="10" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv10" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv10" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale10" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName10" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw11" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_elev"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="11" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv11" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv11" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale11" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName11" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw12" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_twelve"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="12" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv12" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv12" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale12" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName12" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw13" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_thirteen"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="13" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv13" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv13" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale13" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName13" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw14" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_fourteen"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="14" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv14" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv14" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale14" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName14" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw15" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_fiveteen"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="15" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv15" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv15" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale15" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName15" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw16" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sixteen"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="16" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv16" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv16" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale16" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName16" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw17" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sevteen"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="17" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv17" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv17" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale17" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName17" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw18" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_eighteen"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="18" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv18" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv18" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale18" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName18" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_fir"/>
+                <Switch x:Name="sw19" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_nineteen"/>
                 <ImageButton Source="menu.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="19" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv19" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv19" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale19" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName19" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw20" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_twenty"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="20" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv20" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv20" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale20" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName20" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw21" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_twentyone"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="21" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv21" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv21" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale21" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName21" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw22" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_twentytwo"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="22" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv22" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv22" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale22" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName22" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw23" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_twentythr"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="23" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv23" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv23" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale23" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName23" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw24" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_twentyfour"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="24" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv24" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv24" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale24" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName24" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw25" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_twentyfive"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
 
             <StackLayout Grid.Row="25" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <StackLayout Spacing="0">
-                    <Label x:Name="curAbbrv25" Text="USD" TextColor="Black" FontSize="24" HorizontalOptions="Start"/>
+                    <Label x:Name="curAbbrv25" Text="USD" TextColor="Black" FontSize="24" FontAttributes="Bold" HorizontalOptions="Start"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="2">
                         <Label x:Name="curScale25" Text="1" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                         <Label x:Name="curName25" Text="доллар США" TextColor="Black" FontSize="20" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
-                <Switch IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_sec"/>
+                <Switch x:Name="sw26" IsToggled="True" HorizontalOptions="EndAndExpand" Toggled="Sw_twentysix"/>
                 <ImageButton Source="menu.png" HorizontalOptions="EndAndExpand"/>
             </StackLayout>
         </Grid>
